@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+<meta charset="utf8">
+<meta name="viewport" content="width=device-width">
+<title>Correios</title>
+<link rel="stylesheet" href="/css/layout.css">
+</head>
+
+<body>
+	<div class="back">
+		<!-- header --->
+		<div class="header">
+			<h1 class="logo float-left">
+				<img src="/img/logo.png" alt="Ir para a página inicial"
+					title="Ir para a página incial">
+			</h1>
+			<br class="clr">
+		</div>
+
+		<div class="tabs">
+			<div class="wrap">
+				<ul class="tabs-list">
+					<li><a href="http://www.correios.com.br/para-voce">
+							<h2>Você</h2>
+					</a></li>
+					<li><a href="http://www.correios.com.br/para-sua-empresa">
+							<h2>Sua Empresa</h2>
+					</a></li>
+					<li><a href="http://www.correios.com.br/Para-governo">
+							<h2>Governo</h2>
+					</a></li>
+					<li><a href="http://www.correios.com.br/sobre-correios">
+							<h2>Sobre Correios</h2>
+					</a></li>
+					<li><a href="http://www.correios.com.br/correios-online">
+							<h2>Correios On-line</h2>
+					</a></li>
+					<li class="current"><a href="default.cfm">
+							<h2>Sistemas</h2>
+					</a></li>
+				</ul>
+			</div>
+
+			<!-- /header --->
+			<div class="wrap">
+				<div class="content">
+					<div class="laminas" style="display: block;">
+						<div class="column1">
+							<span class="mver"> <span class="dominio"></span>
+								<h3>Busca CEP</h3>
+								<ul>
+									<li><a th:href="@{/buscaCepEndereco}">CEP ou
+											Endereço</a></li>
+									<li><a th:href="@{/buscaFaixaCep}">Faixas de
+											CEP</a></li>
+								</ul> <!-- Fim Menu vertical -->
+						</div>
+						<!-- column1 -->
+						<div class="column2">
+							<div class="content ">
+								
+
+								<section layout:fragment="conteudo"></section>
+							</div>
+						</div>
+						<br class="clr">
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- class="wrap" -->
+		<!-- laminas -->
+		<div class="footer">
+			<div class="wrap">
+				<div class="column-footer">
+					<h3>
+						<a href="">Fale com os Correios</a>
+					</h3>
+					<ul>
+						<li class="node"><a href="">Manifestação via Internet</a>
+							<ul>
+								<li><a href="">Fale Conosco pelo site</a></li>
+							</ul></li>
+						<li class="node"><a href="">Atendimento telefônico</a>
+							<ul>
+								<li>3003 0100 (Capitais e Região Metropolitanas)</li>
+								<li>0800 725 7282 (Demais localidades)</li>
+								<li>0800 725 0100 (Sugestões ou reclamações)</li>
+								<li>0800 725 0898 (exclusivo para portadores <br> de
+									deficiência auditiva)
+								</li>
+								<li>3003 1383 (Informações Banco Postal)</li>
+							</ul></li>
+						<li class="node"><a href="">Rede de atendimento</a>
+							<ul>
+								<li><a href="">Consulte endereços e horários de
+										atendimentos <br> das agências dos Correios
+								</a></li>
+							</ul></li>
+						<li class="node"><a href="">Ouvidoria</a></li>
+					</ul>
+				</div>
+				<div class="column-footer">
+					<h3>
+						<a href="">Portal Correios</a>
+					</h3>
+					<ul>
+						<li><a href="">Mapa do site</a></li>
+						<li><a href="">Rastreamento de objetos</a></li>
+						<li><a href="">Sala de Imprensa</a></li>
+						<li><a href="">Concursos</a></li>
+						<li><a href="">Patrocínios</a></li>
+						<li><a href="">Contatos comerciais</a></li>
+						<li><a href="">Carta de serviços ao cidadão</a></li>
+						<li><a href="">Denúncia</a></li>
+						<li><a href="">Ministério das Comunicações</a></li>
+					</ul>
+				</div>
+				<div class="column-footer">
+					<h3>
+						<a href="">Outros sites dos Correios</a>
+					</h3>
+					<ul>
+						<li><a href="">Correios para você</a></li>
+						<li><a href="">Correios para sua empresa</a></li>
+						<li><a href="">Sobre Correios</a></li>
+						<li><a href="">Loja virtual dos Correios</a></li>
+						<li><a href="">Blog dos Correios</a></li>
+						<li><a href="">Espaço da Filatelia</a></li>
+						<li><a href="">Correios Mobile</a></li>
+						<li><a href="">Sistemas dos Correios</a></li>
+					</ul>
+				</div>
+				<div class="copy">
+					<a href="">Política de Privacidade e notas legais</a> - © Copyright
+					2014 Correios - Todos os direitos reservados.
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

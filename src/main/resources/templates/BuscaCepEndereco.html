@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorator="LayoutPadrao">
+<head>
+<meta charset="utf8">
+<title>Busca Cep Endereço</title>
+</head>
+
+<section layout:fragment="conteudo">
+			<div class="ctrlcontent"> 
+			   <!-- column1 -->
+						<div class="column2">
+							<div class="content ">
+								<div class="tituloimagem">
+									<h3>Busca CEP - Endereço</h3>
+								</div>
+				<!-- inicio borda -->
+				<form name="Geral" id="Geral"
+					th:action="@{/buscaCepEndereco/resultadoBusca/}" method="get">
+					<p>Faça suas consultas individuais de CEP, destinadas a
+						endereçamentos de objetos de correspondências a serem postadas nos
+						Correios. Os campos assinalados com (*) são obrigatórios.</p>
+					<div class="form">
+						<div class="contentform">
+							<span> <label> Endereço ou CEP *:<font
+									color="#1874CD"><br> Não utilize nº de
+										casa/apto/lote/prédio ou abreviação</font><br> <input
+									align="left" maxlength="60" name="parametro" size="50"
+									value="">
+							</label>
+							 <p th:text="${mensagem}" style="color: #a94442" ></p>
+							</span> <span> <label> CEP de:<br> <select
+									name="tipoCEP">
+										<option value="LOG">Localidade/Logradouro</option>
+										<option value="PRO">CEP Promocional</option>
+										<option value="CPC">Caixa Postal Comunitária</option>
+										<option value="GRU">Grande Usuário</option>
+										<option value="UOP">Unidade Operacional</option>
+										<option value="ALL" selected="">Todos</option>
+								</select>
+							</label>
+							</span>
+							<div class="separator"></div>
+							<div class="btnform">
+								<input type="Submit" value="Buscar" class="btn2 float-right">
+							</div>
+						</div>
+					</div>
+				</form>
+
+				<h4>Uso do Busca CEP</h4>
+				<p>
+					O uso deste aplicativo é restrito a consultas individuais de CEP,
+					destinadas a endereçamentos de objetos de correspondências a serem
+					postadas nos Correios. Para outras finalidades consulte o <a
+						href="http://www.correios.com.br/para-voce/correios-de-a-a-z/e-dne">e-DNE.</a>
+				</p>
+			</div>
+	
+</section>
+
+</body>
+</html>

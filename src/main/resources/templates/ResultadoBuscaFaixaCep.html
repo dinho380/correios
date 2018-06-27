@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorator="LayoutPadrao">
+<head>
+<meta charset="utf8">
+<title>Busca Cep Endereço</title>
+</head>
+
+<section layout:fragment="conteudo">
+	<div class="column2">
+		<div class="ctrlcontent">
+		<p th:text="${mensagem}"></p>
+
+			<table class="tmptabelafaixacep">
+				<tbody>
+					<tr>
+						<th width="10">UF</th>
+						<th width="120">Faixa de CEP</th>
+						
+					</tr>
+					<tr th:each="faixaCepDTO : ${faixasCep}">
+
+						<td th:text="${faixaCepDTO.uf}"></td>
+
+						<td th:text="${faixaCepDTO.cep}"></td>
+
+					</tr>
+
+				</tbody>
+			</table>
+			<table class="tmptabela">
+				<tbody>
+					<tr>
+						<th width="10">Localidade</th>
+						<th width="120">Faixa de CEP</th>
+						<th width="120">Situação</th>
+						<th width="120">Tipo de Faixa</th>
+						
+					</tr>
+					<tr th:each="faixaCepCidadeDTO : ${faixasCepCidade}">
+
+						<td th:text="${faixaCepCidadeDTO.localidade}"></td>
+
+						<td th:text="${faixaCepCidadeDTO.localidadeFaixaCep}"></td>
+
+
+						<td th:text="${faixaCepCidadeDTO.situacao}"></td>
+
+						<td th:text="${faixaCepCidadeDTO.tipodeFaixa}"></td>
+
+
+					</tr>
+
+				</tbody>
+			</table>
+		</div>
+	</div>
+</section>
+</body>
+</html>

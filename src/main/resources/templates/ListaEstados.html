@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorator="LayoutPadrao">
+<head>
+<meta charset="utf8">
+<title>Busca Cep Endereço</title>
+</head>
+
+<section layout:fragment="conteudo">
+	<div class="column2">
+		<div class="ctrlcontent">
+			<p>DADOS ENCONTRADOS COM SUCESSO.</p>
+
+			<table class="tmptabela">
+				<tbody>
+					<tr>
+						<th width="10">Logradouro/Id:</th> 
+						<th width="80">Bairro/Estado:</th>  
+						<th width="10">Localidade/UF:</th>  
+					</tr>
+					<tr th:each="estado : ${estados}"> 
+
+						<td th:text="${estado.id}"></td>
+
+						<td th:text="${estado.nome}"></td>
+
+						<td th:text="${estado.uf}"></td>
+
+					</tr>
+
+				</tbody>
+			</table>
+		</div>
+	</div>
+</section>
+</body>
+</html>

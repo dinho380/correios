@@ -1,0 +1,1317 @@
+@charset "utf-8";
+
+/* CSS Document */
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+html, body {
+	height: 100%;
+	/*Mecanismo necessário para a implementação do layout 100%*/
+	font-family: Arial;
+	/*font-family: "Palatino","Helvetica Neue Light","HelveticaNeue-Light",Helvetica,Verdana,Arial,sans-serif;*/
+	font-size: 10px;
+	background-color: #D2CDC9;
+	display: table;
+	width: 100%;
+}
+
+.back {
+	background-color: #FFF;
+	height: auto !important; /* real browsers */
+	height: 100%; /* IE6: treaded as min-height
+	/*min-height: 100%; /* real browsers */
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+ul li {
+	list-style: none;
+}
+
+/***** Global Classes *****/
+.hundredp {
+	width: 98% !important;
+	min-width: 98% !important;
+}
+
+.copy {
+	font-size: 1.1em;
+	padding-top: 3px;
+	width: 100%;
+	clear: both;
+	text-align: center;
+	margin: 40px 0 40px 0;
+}
+
+.clr {
+	clear: both;
+	margin-bottom: -5px;
+}
+
+.float-left {
+	float: left;
+}
+
+.float-right {
+	float: right;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-justify {
+	text-align: justify;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.underline {
+	border-bottom: 1px solid;
+}
+
+.highlight {
+	background: #ffc;
+}
+
+.wrap {
+	width: 100%;
+	margin: 0 auto;
+}
+
+/*################################################*/
+/*######              HEADER                ######*/
+/*################################################*/
+.header {
+	margin-bottom: 9px;
+	width: 990px; /*menos dois pixel do padrão 908px*/
+	margin: 0 auto 0 auto;
+}
+
+h1.logo {
+	position: relative;
+	top: 11px;
+	left: 17px;
+}
+
+.acesso_rapido {
+	float: right;
+	text-align: left;
+	margin-right: 14px;
+	margin-bottom: 10px;
+	width: 452px;
+}
+
+.acesso_rapido a {
+	font-size: 1.2em;
+}
+
+.acesso_rapido input {
+	border: 1px solid #CACAC9;
+	height: 20px;
+	width: 180px;
+	line-height: 20px;
+	font-size: 1.3em;
+	margin-bottom: -1px;
+	margin-top: 0px;
+}
+
+.acesso_rapido div {
+	margin-bottom: 9px;
+}
+
+.acesso_rapido div.produtosaz {
+	margin-left: 10px;
+}
+
+.btnbuscar {
+	background-image: url("../img/btn_buscar.png");
+	height: 22px;
+	width: 20px;
+	display: inline-block;
+	margin: 0 0 -6px -4px;
+	position: absolute;
+}
+
+/* Produtos de AaZ */
+.produtosaz {
+	height: 21px;
+	width: 210px;
+	border: 1px solid #CACAC9;
+	background-color: #fff;
+	background-image: url("../img/layout/icon_seta_cinza.png");
+	background-repeat: no-repeat;
+	background-position: right 4px;
+	line-height: 20px;
+	padding-left: 4px;
+	float: left;
+}
+
+.produtosaz div.expo {
+	margin-bottom: 0px;
+	font-size: 1.2em;
+}
+
+/*################################################*/
+/*######              FOOTER                ######*/
+/*################################################*/
+.footer {
+	border-top: 2px solid #FEC127;
+}
+
+.footer h3 {
+	font-size: 1.4em;
+	color: #0E426B;
+	margin-bottom: 15px;
+}
+
+.footer ul li.node {
+	color: #1183C6;
+	font-size: 1.3em;
+	font-weight: bold;
+}
+
+.footer ul li.node ul li {
+	font-size: 0.9em;
+	font-weight: normal;
+}
+
+.footer ul li.node ul {
+	margin-bottom: 25px;
+}
+
+.footer ul li {
+	font-size: 1.2em;
+	color: #595A5C;
+}
+
+.footer ul {
+	
+}
+
+.footer .wrap {
+	width: 805px !important;
+	height: auto;
+	display: table;
+}
+
+.footer .wrap div.column-footer {
+	float: left;
+	margin: 30px;
+}
+
+/*################################################*/
+/*######          ABAS E LAMINAS            ######*/
+/*################################################*/
+.laminas {
+	width: 985px; /*menos dois pixel do padrão 908px*/
+	margin-bottom: 15px;
+	padding: 5px;
+	margin: 0 auto 0 auto;
+}
+
+/*### TABS ###*/
+.tabs ul.tabs-list {
+	list-style: none outside none;
+	width: 990px;
+	margin: 0 auto;
+	display: table;
+	height: auto;
+}
+
+.tabs ul.tabs-list li {
+	float: left;
+}
+
+.tabs ul.tabs-list a {
+	text-decoration: none;
+}
+
+.tabs ul.tabs-list a {
+	float: none;
+}
+
+.tabs ul.tabs-list li.current a h2 {
+	height: 35px;
+	line-height: 32px;
+	margin-top: 15px; /*15px*/
+	border-top: 1px solid #FFC908;
+	border-left: 1px solid #FFC908;
+	border-right: 1px solid #FFC908;
+	border-bottom: none;
+	background: #FFF;
+	color: #696969;
+	text-decoration: none;
+	outline: none;
+	font-size: 1.6em;
+	font-weight: bold;
+	width: 180px;
+	/*position: absolute;*/
+}
+
+.content {
+	clear: both;
+}
+
+.tabs {
+	width: 100%; /*menos dois pixel do padrão 908px*/
+}
+
+.tabs ul.tabs-list li a h2 {
+	width: 140px;
+	height: 24px;
+	margin: 25px 0 0 5px;
+	display: block;
+	float: left;
+	background-color: #BDB4AB;
+	color: #fff;
+	text-decoration: none;
+	outline: none;
+	line-height: 24px;
+	font-size: 1.3em;
+	font-weight: normal;
+	text-align: center;
+	cursor: pointer;
+}
+
+.tabs li.current a#orelhavoce h2 {
+	background-color: #FFE957;
+	z-index: 99;
+	position: relative;
+	color: #696969;
+} /*FAFAD2*/
+.tabs li.current a#orelhaempresas h2 {
+	background-color: #8CB5CC;
+	z-index: 99;
+	position: relative;
+} /*E0EEEE*/
+.tabs li.current a#orelhafornecedores h2 {
+	background-color: #CFE0AA;
+	z-index: 99;
+	position: relative;
+} /*E8E8E8*/
+.tabs li.current a#orelhacorreios h2 {
+	background-color: #336699;
+	z-index: 99;
+	position: relative;
+	color: #FFF;
+}
+
+/*################################################*/
+/*######              TABELAS               ######*/
+/*################################################*/
+.form table.tmptabela {
+	width: 452px;
+	margin-bottom: 9px;
+}
+
+table.tmptabela {
+	width: 100%;
+	margin-bottom: 9px;
+}
+
+table.tmptabela tr td {
+	height: 20px;
+	border: 1px solid #CFCFCF;
+	color: black;
+	padding: 3px;
+	font-size: 1.1em;
+}
+
+table.tmptabela tr th {
+	padding: 4px;
+}
+
+.thleft tr th {
+	text-align: left;
+	padding-left: 4px;
+}
+
+.thright tr th {
+	text-align: right;
+	padding-right: 4px;
+}
+
+table tr td.label-tabela {
+	background-color: #E0EEEE;
+}
+
+table.tmptabela tr th {
+	font-size: 1.1em;
+	font-family: arial;
+	height: 20px;
+	background-color: #6699CC;
+	border: none;
+	color: #fff;
+}
+
+table.tmptabela tr td.sub-th {
+	background-color: #e0eeee;
+	border: none;
+	font-weight: bold;
+	color: #888;
+	font-size: 1.4em;
+	vertical-align: middle;
+}
+.form .tmptabelafaixacep {
+	width: 452px;
+	margin-bottom: 9px;
+}
+
+.tmptabelafaixacep {
+	width: 170px;
+	margin-bottom: 9px;
+}
+
+.tmptabelafaixacep tr td {
+	height: 20px;
+	border: 1px solid #CFCFCF;
+	color: black;
+	padding: 3px;
+	font-size: 1.1em;
+}
+
+.tmptabelafaixacep tr th {
+	padding: 4px;
+}
+
+.tmptabelafaixacep tr th {
+	font-size: 1.1em;
+	font-family: arial;
+	height: 20px;
+	background-color: #6699CC;
+	border: none;
+	color: #fff;
+}
+
+.tmptabelafaixacep tr td.sub-th {
+	background-color: #e0eeee;
+	border: none;
+	font-weight: bold;
+	color: #888;
+	font-size: 1.4em;
+	vertical-align: middle;
+}
+table tr:nth-child(odd) {
+    background-color: #ADD8E6
+ }
+
+/*################################################*/
+/*######           TELAS INTERNAS           ######*/
+/*################################################*/
+.column1 {
+	width: 229px;
+	float: left;
+}
+
+.column2 {
+	width: 667px;
+	min-height: 360px;
+	display: inline-block;
+	margin-left: 0px;
+	padding: 6px 5px 30px 5px;
+}
+
+.column2 div.content {
+	margin-left: 7px;
+	margin-right: 7px;
+	display: block;
+	border: none !important;
+}
+
+.column2 div.content a {
+	font-size: 0.8em;
+	color: #1874CD;
+}
+
+.column2 div.content a:visited {
+	color: #1874CD;
+	font-size: 1em;
+}
+
+.column2 div.tituloimagem {
+	border-bottom: 1px solid #000000;
+	margin-bottom: 12px;
+	padding-bottom: 3px;
+}
+
+.column2 .trescolunas div.tituloimagem {
+	width: 480px;
+	margin-bottom: 12px;
+	padding-bottom: 3px;
+}
+
+.column2 h3 {
+	position: relative;
+	font-size: 1.8em;
+	color: #336699;
+}
+
+.column2 h4 {
+	font-size: 1.5em;
+	margin-top: 12px;
+	margin-bottom: 0;
+}
+
+.column2 h5 {
+	font-size: 1.3em;
+	margin-top: 12px;
+	margin-bottom: 0;
+}
+
+.column2 p {
+	font-size: 1.35em;
+	line-height: 1.4em;
+	margin-bottom: 15px;
+}
+
+.column2 .imagem150right {
+	float: right;
+	margin: 3px 0 5px 5px;
+	width: 150px;
+	text-align: right;
+}
+
+.column2 .imagem150right img {
+	width: 150px;
+}
+
+.column2 .imagem315right {
+	float: right;
+	margin: 3px 0 5px 5px;
+	width: 315px;
+	text-align: right;
+}
+
+.column2 .imagem315right img {
+	width: 315px;
+}
+
+.column2 .imagem480right {
+	float: right;
+	width: 480px;
+	text-align: right;
+	margin-bottom: 10px;
+}
+
+.column2 .imagem480right img {
+	width: 480px;
+}
+
+.column2 div.quadroavisos {
+	margin-top: -13px;
+	border: 1px solid #CD0000;
+	padding: 10px;
+	width: 129px;
+	float: right;
+}
+
+.column2 div.quadroavisos p {
+	margin: 0 0 8px 0;
+	font-size: 1.1em;
+	line-height: 1.2em;
+}
+
+.column2 div.quadroavisos a {
+	color: #6CA6CD;
+	font-size: 1em;
+}
+
+.column2 div.quadroavisos h3 {
+	color: #000;
+	font-size: 1.2em;
+	margin-bottom: 10px;
+	position: relative;
+	top: 0;
+}
+
+.column2 div.quadroavisos h4 {
+	color: #000;
+	font-size: 1.1em;
+	margin-bottom: 3px;
+	position: relative;
+	top: 0;
+}
+
+.column2 div.quadrodicas {
+	margin-top: -13px;
+	border: 1px solid #6CA6CD;
+	padding: 10px;
+	width: 129px;
+	float: right;
+}
+
+.column2 div.quadrodicas p {
+	margin: 0 0 8px 0;
+	font-size: 1.1em;
+	line-height: 1.2em;
+}
+
+.column2 div.quadrodicas a {
+	color: #6CA6CD;
+	font-size: 1em;
+}
+
+.column2 div.quadrodicas h3 {
+	font-size: 1.3em;
+	margin-bottom: 10px;
+	position: relative;
+	top: 0;
+}
+
+.column2 div.quadrodicas h4 {
+	color: #6CA6CD;
+	padding: 0px;
+	line-height: 1.1em;
+	font-weight: normal;
+	font-size: 1.2em;
+	top: 0;
+}
+
+.comlumn2 div.umacoluna {
+	width: 150px;
+	float: left;
+}
+
+.column2 .trescolunas div.ctrlcontent {
+	width: 480px;
+	margin-right: 15px;
+	float: left;
+}
+
+.btnDestaque {
+	height: 24px;
+	background-image: url("../img/bannercadastro.png");
+	background-repeat: repeat-x;
+	display: block;
+	margin-bottom: 15px;
+	margin-left: 7px;
+	color: #FFFFFF;
+	line-height: 24px;
+	text-align: center;
+	font-weight: bold;
+	right: 8px;
+	font-size: 1.3em;
+	position: relative;
+	width: 100%;
+	cursor: pointer;
+}
+
+/*################################################*/
+/*######            MENU VERTICAL           ######*/
+/*################################################*/
+.mver {
+	width: 220px;
+	min-height: 350px;
+	/*height:332px;    Retornar com esta medida após a criação dos banner internos*/
+	display: block;
+	padding: 8px 4px 24px 4px;
+	overflow: auto;
+}
+
+.mver .dominio {
+	font-size: 1.1em;
+	color: gray;
+	margin-left: 3px;
+	margin-top: 3px;
+}
+
+.mver h3 {
+	font-size: 1.6em;
+	border-bottom: 2px solid #FFCC00;
+	text-transform: none;
+	padding: 1px 5px 5px 5px;
+	margin: -3px;
+}
+
+.mver ul {
+	margin-top: 6px;
+}
+
+.mver ul li {
+	padding: 7px 0 7px 2px;
+	border-bottom: 1px solid #99CCCC;
+}
+
+.mver ul li a {
+	font-size: 1.3em;
+	width: 100%;
+	display: list-item;
+}
+
+.mver ul li a:hover {
+	text-decoration: none;
+}
+
+.mver ul li:hover {
+	font-size: 1em;
+	background-color: #F0F0F0;
+}
+
+.mver ul li ul li a {
+	color: #3399cc;
+	width: 190px;
+}
+
+.mver ul li ul li {
+	padding-left: 10px;
+	font-size: 1em;
+	border-bottom: none;
+}
+
+.mver ul li ul li:hover {
+	padding-left: 18px;
+	font-size: 1em;
+	margin-left: -8px;
+	width: 95%;
+	background-color: #FFF;
+	background-image: url("../img/bullet.gif");
+	background-repeat: no-repeat;
+	background-position: 1px 8px;
+	text-decoration: none;
+}
+
+/*################################################*/
+/*######            FORMULÁRIOS             ######*/
+/*################################################*/
+.form {
+	border: 1px solid #99CCCC;
+	background-color: #E0EEEE;
+	padding: 5px 5px 5px 5px;
+	margin-bottom: 15px;
+	display: table;
+	height: auto;
+	min-width: 469px;
+}
+
+body.ie7 .form {
+	width: 469px;
+}
+
+body.ie6 .form, body.ie7 .form {
+	width: 469px;
+}
+
+.form h4 {
+	font-size: 1.2em; /*olhar*/
+	margin: 9px 0 9px 8px;
+	top: 0;
+}
+
+.form h5 {
+	font-size: 1.1em; /*olhar*/
+	margin: -9px 0 11px 8px;
+	top: 0;
+	font-weight: normal;
+}
+
+.form div.contentform h4, .form div.contentform h5, .form div.contentform h6
+	{
+	margin: 0 0 8px 0;
+	font-size: 1.3em;
+	color: #336699;
+}
+
+.form div.contentform h5, .form div.contentform h6 {
+	margin-top: 20px;
+}
+
+.form span label {
+	font-size: 1.1em;
+	position: relative;
+}
+
+.form div.contentform div label, div.cboxContent div div fieldset label
+	{
+	font-size: 1.2em;
+}
+
+.form div.contentform {
+	background-color: #fff;
+	padding: 10px 5px 1px 7px;
+	width: 456px;
+	font-size: 1.1em;
+	display: table;
+	height: auto;
+	position: relative;
+}
+
+.form.hundredp div.contentform {
+	width: 98%;
+}
+
+.form .contentform span {
+	float: left;
+	font-size: 1em;
+	display: inline-block;
+	margin-bottom: 10px;
+	margin-right: 3px;
+	background-color: #fff;
+	/*Faz o ie6 apresentar a disposição dos campos corretamente*/
+}
+
+.form .contentform div {
+	display: table;
+	height: auto;
+}
+
+div.form div.duascolunas div p {
+	
+}
+
+body.ie6 div.form div.duascolunas div {
+	display: inline-block;
+}
+
+body.ie7 div.form div.duascolunas div {
+	display: inline-block;
+}
+
+div.form div.duascolunas {
+	
+}
+
+body.ie8 div.form div.duascolunas div {
+	display: inline-block;
+}
+
+body.ie9 div.form div.duascolunas div {
+	display: inline-block;
+}
+
+.form label span {
+	color: #6CA6CD;
+	font-size: 0.8em;
+}
+
+.form p.dica {
+	margin-top: -3px;
+	font-size: 1.1em;
+}
+
+.form .defproduto ul {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.form .defproduto ul li {
+	margin-top: 0px;
+	margin-bottom: 2px;
+}
+
+.content div.msg {
+	margin-bottom: 15px;
+}
+
+.content div.msg div fieldset {
+	margin: 0;
+	float: right;
+}
+
+body.ie7 .content div.msg div fieldset {
+	position: absolute;
+	right: 0;
+	width: 200px;
+}
+
+.content div.msg div fieldset button, .content div.msg div fieldset input
+	{
+	margin: 0;
+}
+
+.content div.info {
+	background-color: #DFECF2;
+	background-repeat: no-repeat;
+	padding: 13px 19px 13px 45px;
+	font-size: 1.3em;
+	/*margin-right:9px;*/
+	margin-bottom: 3px;
+	position: relative;
+}
+
+.content div.info img {
+	width: 26px;
+	height: 26px;
+	background-image: url(../img/icons.png);
+	margin-right: 10px;
+	position: absolute;
+	left: 10px;
+	top: 10px;
+}
+
+body.ie6 .content div.info img {
+	left: -35px;
+	top: 13px;
+}
+
+.content div.success img {
+	background-position: -15px -14px;
+}
+
+div.alert img {
+	background-position: -15px -48px;
+}
+
+div.error img {
+	background-position: -15px -83px;
+}
+
+div.information img {
+	background-position: -50px -234px;
+}
+
+div.user {
+	background-image: url(../img/icon_user.png);
+	background-position: 8px 8px;
+}
+
+.content div.error {
+	color: #CC3333;
+}
+
+.form span.inline {
+	margin-bottom: 0px;
+}
+
+.form span.captchar {
+	border: gray 1px solid;
+	width: 112px;
+	height: 36px;
+	position: relative;
+	top: -19px;
+}
+
+.form .contentform div.separator {
+	clear: both;
+	margin-bottom: 0px;
+}
+
+.form div.separator-line {
+	clear: both;
+	border-bottom: 1px dotted #BBBBBB;
+	margin-bottom: 15px;
+}
+
+.form div.btnform {
+	margin-left: 5px;
+	position: relative;
+	width: 98%;
+	border-top: 1px dotted #bbbbbb;
+	padding-top: 5px;
+	margin-top: 0px;
+	margin-bottom: 6px;
+}
+
+.form div.btnform button {
+	background: #104E8B url("../img/btn_2.png");
+	filter: none; /* IE6-8 */
+	color: #fff;
+	margin-top: 0px;
+	/*float:right;*/
+	margin-left: 3px;
+	height: auto;
+}
+
+.form span.result {
+	color: #336699;
+	font-size: 1.2em;
+}
+
+.ctrlcontent ul, .ctrlcontent li {
+	margin-left: 5px;
+	font-size: 1.2em;
+	/*list-style: disc;*/
+}
+
+.ctrlcontent ul, .ctrlcontent ol {
+	margin-bottom: 10px;
+	margin-left: 15px;
+}
+
+.ctrlcontent li {
+	margin-bottom: 12px;
+}
+
+/*f1col, f2col... para definir a largura dos elementos na grade dos formulários  */
+.f1col {
+	width: 48px !important;
+}
+
+select.f1col {
+	width: 53px !important;
+}
+
+span.f1col, button.f1col {
+	width: 53px !important;
+}
+
+.c1col {
+	width: 48px !important;
+}
+
+.f2col {
+	width: 105px !important;
+}
+
+select.f2col {
+	width: 110px !important;
+}
+
+span.f2col, button.f2col {
+	width: 111px !important;
+}
+
+.c2col {
+	width: 105px !important;
+}
+
+.f3col {
+	width: 162px !important;
+}
+
+select.f3col {
+	width: 167px !important;
+}
+
+span.f3col, button.f3col {
+	width: 168px !important;
+}
+
+.c3col {
+	width: 162px !important;
+}
+
+.f4col {
+	width: 219px !important;
+}
+
+select.f4col {
+	width: 224px !important;
+}
+
+span.f4col, button.f4col {
+	width: 225px !important;
+}
+
+.c4col {
+	width: 219px !important;
+}
+
+.f5col {
+	width: 276px !important;
+}
+
+select.f5col {
+	width: 281px !important;
+}
+
+span.f5col, button.f5col {
+	width: 282px !important;
+}
+
+.c5col {
+	width: 276px !important;
+}
+
+.f6col {
+	width: 333px !important;
+}
+
+select.f6col {
+	width: 338px !important;
+}
+
+span.f6col, button.f6col {
+	width: 339px !important;
+}
+
+.c6col {
+	width: 333px !important;
+}
+
+.f7col {
+	width: 390px !important;
+}
+
+select.f7col {
+	width: 395px !important;
+}
+
+span.f7col, button.f7col {
+	width: 396px !important;
+}
+
+.c7col {
+	width: 390px !important;
+}
+
+.f8col {
+	width: 447px !important;
+}
+
+select.f8col {
+	width: 452px !important;
+}
+
+span.f8col, button.f8col {
+	width: 453px !important;
+}
+
+.c8col {
+	width: 447px !important;
+}
+
+/*f1row, f2row... utilizado para definir a altura, em linhas, dos componentes dos formulários*/
+.f1row, f2row {
+	height: 68px;
+}
+
+.f3row {
+	height: 117px;
+}
+
+.f4row {
+	height: 166px;
+}
+
+.f5row {
+	height: 215px;
+}
+
+.f6row {
+	height: 264px;
+}
+
+input {
+	height: 19px;
+	line-height: 18px;
+	border: 1px solid #696969;
+	margin-top: 3px;
+	margin-right: 1px;
+	padding-left: 3px;
+	font-size: 1em;
+}
+
+.form input[type="radio"], .form input[type="checkbox"] {
+	height: 10px;
+	margin-left: 3px;
+	*height: 20px;
+	*border: 1px solid gray;
+}
+
+.form select {
+	height: 21px;
+	border: 1px solid #696969;
+	margin-top: 4px;
+	margin-right: 1px;
+	top: -1px;
+	position: relative;
+	font-size: 1em;
+}
+
+.form select option {
+	font-size: 1em;
+}
+
+.paginacao {
+	height: 16px;
+	font-size: 1.2em;
+	margin-bottom: 7px;
+	text-align: center;
+}
+
+.paginacao span a {
+	font-size: 1em;
+}
+
+.paginacao img {
+	margin-bottom: -3px;
+}
+
+.paginacao span {
+	
+}
+
+.paginacao span.paginas {
+	padding: 0 15px 0 15px;
+}
+
+.paginacao span.left {
+	background-image: url("../img/left.gif");
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 16px;
+	margin-bottom: 0;
+}
+
+.paginacao span.right {
+	background-image: url("../img/right.gif");
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 16px;
+	margin-bottom: 0;
+}
+
+
+
+/*################################################*/
+/*######             BOTÕES                 ######*/
+/*################################################*/
+.btn-home {
+	background-image: url("../img/btn_home.gif");
+	height: 22px;
+	width: 144px;
+	color: #000;
+	border: 1px solid #ccc;
+	display: inline-block;
+	line-height: 22px;
+	text-align: center;
+	font-size: 1.2em;
+	text-decoration: none;
+	margin: 0 0 0 1px;
+}
+
+/*a.btn-home:visited {
+	text-decoration:underline;
+	background-image:url("../img/btn_box_active.gif");
+}*/
+a.btn-home:hover { /*text-decoration:underline;*/
+	background-image: url("../img/btn_home_hover.gif");
+	text-decoration: none;
+}
+
+a.btn-home:active { /*text-decoration:underline;*/
+	background-image: none;
+	background-color: #DEDEDE;
+}
+
+/*Botões com o nível de importância número 1 (Salvar, Enviar, Próximo... - sempre relacionados a principal função da página)*/
+.contentform div.btnform input{
+	height: 25px;
+}
+.btn1 {
+	background: #104E8B url("../img/btn_1.png");
+	height: 20px;
+	min-width: 75px;
+	color: #FFFFFF;
+	display: inline-block;
+	line-height: 19px;
+	text-align: center;
+	font-size: 1.1em;
+	text-decoration: none;
+	margin: 0 0 0 1px;
+	cursor: pointer;
+	padding: 0 10px 0 10px;
+}
+
+.contentform div.btnform a.btn1 {
+	color: #fff;
+}
+
+a.btn1:visited { /*text-decoration:underline;*/
+	background: #104E8B url("../img/btn_1.png");
+}
+
+a.btn1:hover { /*text-decoration:underline;*/
+	height: 18px;
+	width: 73px;
+	border: 1px solid #FBB117;
+	background: #104E8B url("../img/btn_hover_1.png");
+	text-decoration: none;
+}
+
+a.btn1:active { /*text-decoration:underline;*/
+	background: red url("../img/btn_hover_1.png");
+}
+
+/*Botões com o nível de importância número 2 (Qualquer botão que esteja posicionado ao lado dos botões de importância número 1 - barra de botões)*/
+.btn2 {
+	background: #104E8B url("../img/btn_2.png");
+	height: 20px;
+	/*min-width: 75px;*/
+	color: #FFFFFF;
+	display: inline-block;
+	line-height: 19px;
+	text-align: center;
+	font-size: 1.1em;
+	text-decoration: none;
+	margin: 0 0 0 1px;
+	cursor: pointer;
+	padding: 0 10px 0 10px;
+}
+
+.contentform div.btnform a.btn2 {
+	color: #fff;
+}
+
+.btn2:visited { /*text-decoration:underline;*/
+	background: #104E8B url("../img/btn_2.png");
+}
+
+.btn2:hover { /*text-decoration:underline;*/
+	height: 20px;
+	border: 1px solid #FBB117;
+	background: #104E8B url("../img/btn_hover_2.png");
+	text-decoration: none;
+}
+
+.btn2:active { /*text-decoration:underline;*/
+	background: #104E8B url("../img/btn_hover_2.png");
+}
+
+/*Botões com o nível de importância número 3 (Botões posicionados dentro dos formulários, ao lado dos campos.)*/
+.btn3 {
+	background: #104E8B url("../img/btn_3.png");
+	height: 20px;
+	width: 75px;
+	color: #FFFFFF;
+	display: inline-block;
+	line-height: 19px;
+	text-align: center;
+	font-size: 1.1em;
+	text-decoration: none;
+	margin: 0 0 0 1px;
+	cursor: pointer;
+}
+
+.contentform div.btnform a.btn3 {
+	color: #fff;
+}
+
+a.btn3:visited { /*text-decoration:underline;*/
+	background: #104E8B url("../img/btn_3.png");
+	color: #fff;
+}
+
+a.btn3:hover { /*text-decoration:underline;*/
+	height: 18px;
+	width: 73px;
+	line-height: 17px;
+	border: 1px solid #FBB117;
+	background: #104E8B url("../img/btn_hover_3.png");
+	text-decoration: none;
+}
+
+a.btn3:active { /*text-decoration:underline;*/
+	background: #104E8B url("../img/btn_hover_3.png");
+}
